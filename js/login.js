@@ -26,10 +26,10 @@ $('#login-form').on('submit', function (e) {
   .then((data) => {
     if (!data.token) throw new Error('Token JWT não retornado.')
 
-    // Armazenar token no localStorage
+  
     localStorage.setItem('jwt', data.token)
 
-    // Redirecionar para a página protegida
+
     window.location.href = 'index.html'
   })
   .catch(err => {

@@ -7,7 +7,6 @@ document.getElementById('formCadastro').addEventListener('submit', async functio
     const senha = document.getElementById('senha').value.trim();
     const erroDiv = document.getElementById('cadastro-erro');
   
-    // Validação básica
     if (!nome || !email || !telefone || !senha) {
       erroDiv.textContent = "Preencha todos os campos.";
       erroDiv.style.display = "block";

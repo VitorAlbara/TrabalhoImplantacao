@@ -1,6 +1,5 @@
 const URL_CLIENTES = "http://localhost:8080/clientes";
 
-// Redireciona se não houver token
 if (!localStorage.getItem('token')) {
   window.location.href = '/login.html';
 }
